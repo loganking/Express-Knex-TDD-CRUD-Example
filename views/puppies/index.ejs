@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <h1>All the Puppies</h1>
+    <ul>
+    <% puppies.forEach(function(pup) { %>
+      <li>
+        <a href="/puppies/<%= pup.id %>">
+          <%= pup.name %>
+        </a>
+      </li>
+    <% }); %>
+    </ul>
+
+    <a href="/puppies/new">Add a Puppy</a>
+  </body>
+</html>

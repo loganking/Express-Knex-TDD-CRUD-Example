@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <h1>Edit a Puppy</h1>
+
+    <form method="POST" action="/puppies/<%= puppy.id %>?_method=PUT">
+      <div>
+        <p>
+          <label>Name
+            <input name="puppy[name]" type="text" value="<%= puppy.name %>">
+          </label>
+        </p>
+        <p>
+          <label>Breed
+            <input name="puppy[breed]" type="text" value="<%= puppy.breed %>">
+          </label>
+        </p>
+      </div>
+
+      <div>
+        <button type="submit">Update Puppy</button>
+      </div>
+    </form>
+
+    <form method="POST" action="/puppies/<%= puppy.id %>?_method=DELETE">
+      <div>
+        <button type="submit">Delete Puppy</button>
+      </div>
+    </form>
+
+    <a href="/puppies">Home</a>
+  </body>
+</html>
+

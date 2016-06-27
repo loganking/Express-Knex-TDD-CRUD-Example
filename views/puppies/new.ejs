@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <h1>Add a Puppy</h1>
+
+    <form method="POST" action="/puppies">
+      <div>
+        <p>
+          <label>Name
+            <input name="puppy[name]" type="text">
+          </label>
+        </p>
+        <p>
+          <label>Breed
+            <input name="puppy[breed]" type="text">
+          </label>
+        </p>
+      </div>
+
+      <div>
+        <button type="submit">Add Puppy</button>
+      </div>
+    </form>
+
+    <a href="/puppies">Home</a>
+  </body>
+</html>

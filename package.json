@@ -2,11 +2,24 @@
   "name": "animals",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test mocha"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.1",
+    "chai": "^3.5.0",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "knex": "^0.11.7",
+    "method-override": "^2.3.6",
+    "mocha": "^2.5.3",
+    "morgan": "^1.7.0",
+    "pg": "^5.1.0",
+    "supertest": "^1.2.0"
+  }
 }
